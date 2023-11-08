@@ -1,0 +1,4 @@
+Data #class
+ups.connector.demo #namespace
+trackingResponse com.ups.wwwcie.client.TrackApiResponse #field
+trackingResponse PERSISTENT #fieldModifier

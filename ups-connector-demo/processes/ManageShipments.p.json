@@ -1,0 +1,55 @@
+{
+  "format" : "10.0.0",
+  "id" : "18B6B1E5C8AA1A82",
+  "config" : {
+    "data" : "ups.connector.demo.Data"
+  },
+  "elements" : [ {
+      "id" : "f0",
+      "type" : "RequestStart",
+      "name" : "start.ivp",
+      "config" : {
+        "callSignature" : "start",
+        "outLink" : "start.ivp"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 64 }
+      },
+      "connect" : { "id" : "f4", "to" : "f3" }
+    }, {
+      "id" : "f1",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 352, "y" : 64 }
+      }
+    }, {
+      "id" : "f3",
+      "type" : "SubProcessCall",
+      "name" : "upsTracking",
+      "config" : {
+        "processCall" : "Tracking:tracking(ups.connector.TrackingRequestData)",
+        "output" : {
+          "map" : {
+            "out.trackingResponse" : "in.trackingResponse"
+          },
+          "code" : "ivy.log.info(\"helloooooo {0}\", result.toString());"
+        },
+        "call" : {
+          "params" : [
+            { "name" : "trackingRequest", "type" : "ups.connector.TrackingRequestData" }
+          ],
+          "map" : {
+            "param.trackingRequest.inquiryNumber" : "\"XXXXX111\"",
+            "param.trackingRequest.locale" : "\"en_US\"",
+            "param.trackingRequest.returnSignature" : "\"false\"",
+            "param.trackingRequest.transId" : "\"AAA\"",
+            "param.trackingRequest.transactionSrc" : "\"1111\""
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 224, "y" : 64 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
+    } ]
+}
