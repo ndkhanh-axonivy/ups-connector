@@ -5,51 +5,42 @@
     "data" : "ups.connector.demo.Data"
   },
   "elements" : [ {
-      "id" : "f0",
+      "id" : "f6",
       "type" : "RequestStart",
-      "name" : "start.ivp",
+      "name" : "getTrackingInfo.ivp",
       "config" : {
-        "callSignature" : "start",
-        "outLink" : "start.ivp"
+        "callSignature" : "getTrackingInfo",
+        "outLink" : "getTrackingInfo.ivp"
       },
       "visual" : {
-        "at" : { "x" : 96, "y" : 64 }
+        "at" : { "x" : 88, "y" : 200 }
       },
-      "connect" : { "id" : "f4", "to" : "f3" }
+      "connect" : { "id" : "f7", "to" : "f8" }
     }, {
-      "id" : "f1",
-      "type" : "TaskEnd",
-      "visual" : {
-        "at" : { "x" : 352, "y" : 64 }
-      }
-    }, {
-      "id" : "f3",
-      "type" : "SubProcessCall",
-      "name" : "upsTracking",
+      "id" : "f8",
+      "type" : "DialogCall",
+      "name" : "TrackDetail",
       "config" : {
-        "processCall" : "Tracking:tracking(ups.connector.TrackingRequestData)",
-        "output" : {
-          "map" : {
-            "out.trackingResponse" : "in.trackingResponse"
-          },
-          "code" : "ivy.log.info(\"helloooooo {0}\", result.toString());"
-        },
+        "dialogId" : "ups.connector.demo.TrackDetail",
+        "startMethod" : "start(com.ups.wwwcie.client.TrackApiResponse)",
         "call" : {
           "params" : [
-            { "name" : "trackingRequest", "type" : "ups.connector.TrackingRequestData" }
+            { "name" : "trackApiResponse", "type" : "com.ups.wwwcie.client.TrackApiResponse" }
           ],
           "map" : {
-            "param.trackingRequest.inquiryNumber" : "\"XXXXX111\"",
-            "param.trackingRequest.locale" : "\"en_US\"",
-            "param.trackingRequest.returnSignature" : "\"false\"",
-            "param.trackingRequest.transId" : "\"AAA\"",
-            "param.trackingRequest.transactionSrc" : "\"1111\""
+            "param.trackApiResponse" : "in.trackApiResponse"
           }
         }
       },
       "visual" : {
-        "at" : { "x" : 224, "y" : 64 }
+        "at" : { "x" : 400, "y" : 200 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : { "id" : "f12", "to" : "f9" }
+    }, {
+      "id" : "f9",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 688, "y" : 200 }
+      }
     } ]
 }

@@ -20,12 +20,13 @@
           }
         },
         "result" : {
-          "params" : [
-            { "name" : "trackApiResponse", "type" : "com.ups.wwwcie.client.TrackApiResponse" }
-          ],
           "map" : {
             "result.trackApiResponse" : "in.trackApiResponse"
-          }
+          },
+          "code" : "ivy.log.error(\"result {0}\", in.trackApiResponse.toString());",
+          "params" : [
+            { "name" : "trackApiResponse", "type" : "com.ups.wwwcie.client.TrackApiResponse" }
+          ]
         }
       },
       "visual" : {
