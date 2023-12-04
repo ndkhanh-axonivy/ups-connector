@@ -24,12 +24,12 @@
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : { "id" : "f12", "to" : "f9" }
     }, {
       "id" : "f1",
       "type" : "HtmlDialogEnd",
       "visual" : {
-        "at" : { "x" : 224, "y" : 64 }
+        "at" : { "x" : 352, "y" : 64 }
       }
     }, {
       "id" : "f3",
@@ -101,5 +101,22 @@
       "visual" : {
         "at" : { "x" : 712, "y" : 304 }
       }
+    }, {
+      "id" : "f9",
+      "type" : "Script",
+      "name" : "init",
+      "config" : {
+        "output" : {
+          "code" : [
+            "in.trackingRequest.transId = \"iewssoas2cq10QnkCX2r1P\";",
+            "in.trackingRequest.transactionSrc = \"Testing\";",
+            "in.trackingRequest.locale = \"de_DE\";"
+          ]
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 224, "y" : 64 }
+      },
+      "connect" : { "id" : "f2", "to" : "f1" }
     } ]
 }

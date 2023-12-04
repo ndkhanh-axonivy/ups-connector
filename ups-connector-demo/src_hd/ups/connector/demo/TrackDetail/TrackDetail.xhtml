@@ -16,14 +16,14 @@
 				For example, if a package shipment contained four individual packages, the query response would show a shipment containing the one package out of four with the associated tracking number.</p>
 
 			<h:form id="form">
-				<p:messages />
+				<p:growl id="growl" showDetail="false" />
 				<p:panelGrid id="request" columns="2" layout="grid"
 					styleClass="ui-panelgrid-blank ui-fluid"
 					columnClasses="ui-g-12 ui-md-3 ui-lg-2, ui-g-12 ui-md-9 ui-lg-4, ui-g-12 ui-md-3 ui-lg-2, ui-g-12 ui-md-9 ui-lg-4">
 
 					<p:outputLabel for="inquiryNumber" value="Tracking number" />
 					<p:inputText id="inquiryNumber"
-						value="#{data.trackingRequest.inquiryNumber}" />
+						value="#{data.trackingRequest.inquiryNumber}" required="true"/>
 
 					<p:outputLabel for="locale" value="Locale" />
 					<p:inputText id="locale" value="#{data.trackingRequest.locale}" />
@@ -39,8 +39,8 @@
 				</p:panelGrid>
 				<br />
 				<div class="command-btns">
-					<!-- <p:commandLink id="cancel"
-						actionListener="#{ivyWorkflowView.cancel()}" value="Cancel" /> -->
+					<p:commandLink id="cancel"
+						actionListener="#{logic.close}" value="Cancel" immediate="true"/>
 					<p:commandButton id="search"
 						actionListener="#{logic.getTracking(data.trackingRequest)}" value="Search"
 						update="form" icon="pi pi-check" />

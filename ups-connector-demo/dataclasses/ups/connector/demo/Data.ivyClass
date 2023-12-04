@@ -1,6 +1,2 @@
 Data #class
 ups.connector.demo #namespace
-trackApiResponse com.ups.wwwcie.client.TrackApiResponse #field
-trackApiResponse PERSISTENT #fieldModifier
-trackingRequest ups.connector.TrackingRequestData #field
-trackingRequest PERSISTENT #fieldModifier

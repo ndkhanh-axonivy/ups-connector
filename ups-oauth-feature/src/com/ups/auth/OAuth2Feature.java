@@ -27,7 +27,7 @@ import ch.ivyteam.ivy.rest.client.oauth2.uri.OAuth2UriProperty;
 public class OAuth2Feature implements Feature {
 
 	public static interface Default {
-		String AUTH_URI = "https://wwwcie.ups.com/security/v1/oauth";
+		String AUTH_URI = "https://onlinetools.ups.com/security/v1/oauth";
 	}
 
 	public static interface Property {

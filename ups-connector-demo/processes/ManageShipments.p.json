@@ -10,7 +10,8 @@
       "name" : "getTrackingInfo.ivp",
       "config" : {
         "callSignature" : "getTrackingInfo",
-        "outLink" : "getTrackingInfo.ivp"
+        "outLink" : "getTrackingInfo.ivp",
+        "startName" : "Get Tracking"
       },
       "visual" : {
         "at" : { "x" : 88, "y" : 200 }
@@ -26,10 +27,7 @@
         "call" : {
           "params" : [
             { "name" : "trackApiResponse", "type" : "com.ups.wwwcie.client.TrackApiResponse" }
-          ],
-          "map" : {
-            "param.trackApiResponse" : "in.trackApiResponse"
-          }
+          ]
         }
       },
       "visual" : {
