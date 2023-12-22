@@ -8,11 +8,12 @@
 Variables:
   ups-connector:
   
-      # Your Azure Application (client) ID
+      # Your UPS Application Client ID
       appId: ""
   
-      # Secret key from your applications "certificates & secrets"
-      # [password]
+      # Your UPS Application Client Secret
       secretKey: ""
+      
+      
       
   

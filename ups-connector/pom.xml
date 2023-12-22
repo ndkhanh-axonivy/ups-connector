@@ -4,13 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ups.connector</groupId>
   <artifactId>ups-connector</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>iar</packaging>
   <dependencies>
     <dependency>
       <groupId>com.ups.oauth.feature</groupId>
       <artifactId>ups-oauth-feature</artifactId>
       <version>${project.version}</version>
+      <type>iar</type>
     </dependency>
   </dependencies>
   <build>

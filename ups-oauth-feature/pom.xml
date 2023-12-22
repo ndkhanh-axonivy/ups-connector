@@ -4,12 +4,20 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ups.oauth.feature</groupId>
   <artifactId>ups-oauth-feature</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>iar</packaging>
   <scm>
     <developerConnection>scm:git:https://github.com/axonivy-market/${project.name}.git</developerConnection>
-    <tag>HEAD</tag>
   </scm>
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>maven.axonivy.com</id>
+      <url>https://maven.axonivy.com</url>
+    </repository>
+  </repositories>
   <pluginRepositories>
     <pluginRepository>
       <snapshots>
@@ -37,11 +45,4 @@
       </plugin>
     </plugins>
   </build>
-  <repositories><repository>
-	<id>maven.axonivy.com</id>
-	<url>https://maven.axonivy.com</url>
-	<snapshots>
-		<enabled>true</enabled>
-	</snapshots>
-</repository></repositories>
 </project>

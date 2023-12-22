@@ -45,6 +45,21 @@
       "type" : "SubProcessCall",
       "name" : "Pickup",
       "config" : {
+        "call" : {
+          "params" : [
+            { "name" : "version", "type" : "String" },
+            { "name" : "transId", "type" : "String" },
+            { "name" : "transactionSrc", "type" : "String" },
+            { "name" : "pickupCreationRequest", "type" : "com.ups.wwwcie.api.client.PickupCreationRequest" }
+          ],
+          "map" : {
+            "param.version" : "\"v1\"",
+            "param.transId" : "in.transId",
+            "param.transactionSrc" : "in.transactionSrc",
+            "param.pickupCreationRequest" : "in.pickupCreationRequest"
+          },
+          "code" : "ivy.log.info(\"Start calling pickup creation API\");"
+        },
         "processCall" : "Pickup:pickupCreation(String,String,String,com.ups.wwwcie.api.client.PickupCreationRequest)",
         "output" : {
           "map" : {
@@ -59,20 +74,6 @@
             "",
             "FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, \"Pickup created sucessfully\", null));"
           ]
-        },
-        "call" : {
-          "params" : [
-            { "name" : "version", "type" : "String" },
-            { "name" : "transId", "type" : "String" },
-            { "name" : "transactionSrc", "type" : "String" },
-            { "name" : "pickupCreationRequest", "type" : "com.ups.wwwcie.api.client.PickupCreationRequest" }
-          ],
-          "map" : {
-            "param.version" : "\"v1\"",
-            "param.transId" : "in.transId",
-            "param.transactionSrc" : "in.transactionSrc",
-            "param.pickupCreationRequest" : "in.pickupCreationRequest"
-          }
         }
       },
       "visual" : {
@@ -160,6 +161,7 @@
             "import org.primefaces.context.RequestContext;",
             "import org.primefaces.component.inputtext.InputText;",
             "import javax.faces.context.FacesContext;",
+            "ivy.log.error(\"Error: {0}\", in.pickupCreationRequest);",
             "",
             "FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, \"Error\", null));"
           ]
