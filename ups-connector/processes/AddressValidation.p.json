@@ -52,6 +52,10 @@
       "type" : "RestClientCall",
       "name" : "Call address validation API",
       "config" : {
+        "headers" : {
+          "Accept" : "*/*",
+          "X-Requested-By" : "in.version"
+        },
         "bodyObjectMapping" : {
           "param.xaVRequest" : "in.xavRequest"
         },

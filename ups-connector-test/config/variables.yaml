@@ -6,17 +6,4 @@
 # '<project>/Config/_<environment>/variables.yaml
 #
 Variables:
-  ups-connector:
-  
-      # Url to UPS connector
-      Url: "https://onlinetools.ups.com/api"
-  
-      # Your UPS Application Client ID
-      appId: ""
-  
-      # Your UPS Application Client Secret
-      secretKey: ""
-      
-      
-      
-  
+#  myVariable: value

@@ -9,6 +9,9 @@ Variables:
 
   ups-connector:
   
+      # Url to UPS connector
+      Url: "https://wwwcie.ups.com/api"
+  
       # Your UPS Application (client) ID
       appId: "ZItPy7z8Ep1bZBpGLVQbW3CPiMk9rGFJDpRLjgocLCJbQ5Tw"
   

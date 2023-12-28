@@ -2,26 +2,40 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ups.connector</groupId>
-  <artifactId>ups-connector</artifactId>
-  <version>1.0.0</version>
+  <groupId>ups.connector.test</groupId>
+  <artifactId>ups-connector-test</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>iar</packaging>
   <dependencies>
     <dependency>
-      <groupId>com.ups.oauth.feature</groupId>
-      <artifactId>ups-oauth-feature</artifactId>
+      <groupId>ups.connector</groupId>
+      <artifactId>ups-connector</artifactId>
       <version>1.0.0</version>
       <type>iar</type>
     </dependency>
+    <dependency>
+    	<groupId>com.axonivy.ivy.test</groupId>
+    	<artifactId>unit-tester</artifactId>
+    	<version>10.0.14</version>
+    	<scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
+    <testSourceDirectory>src_test</testSourceDirectory>
     <plugins>
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
         <artifactId>project-build-plugin</artifactId>
-        <version>10.0.6</version>
+        <version>10.0.14</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>
+  <repositories><repository>
+	<id>maven.axonivy.com</id>
+	<url>https://maven.axonivy.com</url>
+	<snapshots>
+		<enabled>true</enabled>
+	</snapshots>
+</repository></repositories>
 </project>

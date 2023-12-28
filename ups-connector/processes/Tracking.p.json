@@ -20,17 +20,17 @@
           }
         },
         "result" : {
-          "map" : {
-            "result.trackApiResponse" : "in.trackApiResponse"
-          },
-          "code" : "ivy.log.error(\"result {0}\", in.trackApiResponse.toString());",
           "params" : [
             { "name" : "trackApiResponse", "type" : "com.ups.wwwcie.client.TrackApiResponse" }
-          ]
+          ],
+          "map" : {
+            "result.trackApiResponse" : "in.trackApiResponse"
+          }
         }
       },
       "visual" : {
-        "at" : { "x" : 96, "y" : 64 }
+        "at" : { "x" : 96, "y" : 64 },
+        "labelOffset" : { "x" : 17, "y" : 33 }
       },
       "connect" : { "id" : "f4", "to" : "f3" }
     }, {
@@ -63,8 +63,7 @@
         "templateParams" : {
           "inquiryNumber" : "in.trackingRequest.inquiryNumber"
         },
-        "resultType" : "com.ups.wwwcie.client.TrackApiResponse",
-        "responseCode" : "ivy.log.info(\"tracking {0}\", out.trackApiResponse);"
+        "resultType" : "com.ups.wwwcie.client.TrackApiResponse"
       },
       "visual" : {
         "at" : { "x" : 352, "y" : 64 }
