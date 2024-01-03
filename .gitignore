@@ -1,18 +1,2 @@
-# general
-Thumbs.db
-.DS_Store
-*~
-*.log
 
-# java
-*.class
-hs_err_pid*
-
-# maven
-target/
-
-# ivy
-lib/mvn-deps/
-logs/
-src_dataClasses/
-src_wsproc/
+ups-oauth-feature/src/com/ups/auth/OAuth.java

@@ -1,0 +1,16 @@
+AddressData #class
+ups.connector.demo.Address #namespace
+requestoption Integer #field
+requestoption PERSISTENT #fieldModifier
+version String #field
+version PERSISTENT #fieldModifier
+regionalrequestindicator String #field
+regionalrequestindicator PERSISTENT #fieldModifier
+maximumcandidatelistsize Integer #field
+maximumcandidatelistsize PERSISTENT #fieldModifier
+xavRequest com.ups.wwwcie.api.client.XAVRequest #field
+xavRequest PERSISTENT #fieldModifier
+xavResponseWrapper com.ups.wwwcie.api.client.XAVResponseWrapper #field
+xavResponseWrapper PERSISTENT #fieldModifier
+errorMessage String #field
+errorMessage PERSISTENT #fieldModifier
