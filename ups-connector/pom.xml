@@ -10,7 +10,7 @@
     <dependency>
       <groupId>com.axonivy.connector.ups</groupId>
       <artifactId>ups-oauth-feature</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.0-SNAPSHOT</version>
       <type>iar</type>
     </dependency>
   </dependencies>
