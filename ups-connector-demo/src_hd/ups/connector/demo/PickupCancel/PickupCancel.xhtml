@@ -23,7 +23,7 @@
 
 					<p:outputLabel for="cancelBy" value="Cancel By" />
 					<p:selectOneMenu id="cancelBy" value="#{data.cancelBy}">
-					<p:ajax event="valueChange" update="form" />
+						<p:ajax event="valueChange" update="form" />
 						<f:selectItem itemLabel="Account Number" itemValue="01" />
 						<f:selectItem itemLabel="PRN" itemValue="02" />
 					</p:selectOneMenu>
@@ -33,15 +33,16 @@
 
 					<p:outputLabel for="transactionSrc" value="Transaction Src" />
 					<p:inputText id="transactionSrc" value="#{data.transactionSrc}" />
-					
+
 					<c:if test="#{data.cancelBy eq 01}">
 						<p:outputLabel for="accountNumber" value="Account number" />
-						<p:inputText id="accountNumber" value="#{data.accountNumber}" required="true"/>
+						<p:inputText id="accountNumber" value="#{data.accountNumber}"
+							required="true" />
 					</c:if>
 
 					<c:if test="#{data.cancelBy eq 02}">
 						<p:outputLabel for="prn" value="PRN" />
-						<p:inputText id="prn" value="#{data.prn}" required="true"/>
+						<p:inputText id="prn" value="#{data.prn}" required="true" />
 					</c:if>
 
 
@@ -52,7 +53,7 @@
 					<p:commandLink id="cancel" actionListener="#{logic.close}"
 						value="Cancel" immediate="true" />
 					<p:commandButton id="pickupCance" actionListener="#{logic.callAPI}"
-						value="Cancel Pickup" update="form" icon="pi pi-check"/>
+						value="Cancel Pickup" update="form" icon="pi pi-check" />
 				</div>
 			</h:form>
 
