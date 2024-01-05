@@ -9,12 +9,10 @@
 	<ui:composition template="/layouts/basic-10.xhtml">
 		<ui:define name="title">Address</ui:define>
 		<ui:define name="content">
-
 			<h3>Address Validation</h3>
 			<p>The UPS Address Validation API's database is updated every
 				month with new address information from USPS. Address Validation for
 				City, State, Zip is only available for the United States.</p>
-
 			<h:form id="form">
 				<p:growl id="growl" showDetail="false" />
 				<p:panelGrid columns="2" layout="grid"
@@ -46,7 +44,6 @@
 					<p:inputText id="postcodeExtendedLow"
 						value="#{upsBean.addressKeyFormat.postcodeExtendedLow}" />
 
-
 					<p:outputLabel for="urbanization" value="Urbanization" />
 					<p:inputText id="urbanization"
 						value="#{upsBean.addressKeyFormat.urbanization}" />
@@ -64,7 +61,6 @@
 						value="Validate" update="form" icon="pi pi-check" />
 				</div>
 			</h:form>
-
 		</ui:define>
 	</ui:composition>
 </h:body>

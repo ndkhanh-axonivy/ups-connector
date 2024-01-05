@@ -13,9 +13,8 @@
 			<h3>Pickup Creation</h3>
 			<p>Using the Pickup API, applications can schedule pickups.</p>
 			<p:growl />
-
 			<h:form id="form">
-			<p:growl id="growl" showDetail="false" />
+				<p:growl id="growl" showDetail="false" />
 				<p:fieldset legend="Shipper Info">
 					<p:panelGrid columns="5"
 						styleClass="ui-panelgrid-blank ui-fluid width-100"
@@ -30,7 +29,6 @@
 						<p:inputText id="accountCountryCode" required="true"
 							value="#{data.pickupCreationRequest.shipper.account.accountCountryCode}" />
 					</p:panelGrid>
-
 				</p:fieldset>
 				<p:fieldset legend="Pickup Date Info" styleClass="mt-8">
 					<p:panelGrid columns="5"
@@ -47,11 +45,9 @@
 
 						<p:outputLabel for="pickupDate" value="Pickup Date" />
 						<p:inputText id="pickupDate" required="true"
-							value="#{data.pickupCreationRequest.pickupDateInfo.pickupDate}"  />
+							value="#{data.pickupCreationRequest.pickupDateInfo.pickupDate}" />
 					</p:panelGrid>
-
 				</p:fieldset>
-
 				<p:fieldset legend="Address" styleClass="mt-8">
 					<p:panelGrid columns="5"
 						styleClass="ui-panelgrid-blank ui-fluid width-100"
@@ -117,7 +113,6 @@
 						<p:inputText id="phoneExtension"
 							value="#{data.pickupCreationRequest.pickupAddress.phone.extension}" />
 					</p:panelGrid>
-
 				</p:fieldset>
 				<p:fieldset legend="Pickup Piece" styleClass="mt-8">
 					<p:panelGrid columns="5"
@@ -146,7 +141,6 @@
 							<f:selectItem itemLabel="Pallet" itemValue="03" />
 						</p:selectOneMenu>
 					</p:panelGrid>
-
 				</p:fieldset>
 				<p:fieldset legend="Total weight" styleClass="mt-8">
 					<p:panelGrid columns="5"
@@ -161,7 +155,6 @@
 						<p:inputText id="unitOfMeasurement" required="true"
 							value="#{data.pickupCreationRequest.totalWeight.unitOfMeasurement}" />
 					</p:panelGrid>
-
 				</p:fieldset>
 				<p:fieldset legend="Other Infomation" styleClass="mt-8">
 					<p:panelGrid columns="5"
@@ -220,13 +213,11 @@
 				</p:fieldset>
 				<br />
 				<div class="command-btns">
-					<p:commandLink id="cancel"
-						actionListener="#{logic.close}" value="Cancel" />
+					<p:commandLink id="cancel" actionListener="#{logic.close}"
+						value="Cancel" />
 					<p:commandButton id="proceed" actionListener="#{logic.callAPI}"
 						value="Proceed" update="form" icon="pi pi-check" />
 				</div>
-				
-
 				<c:if test="#{data.pickupCreationResponse ne null}">
 					<hr />
 					<h3>Pickup Creation Response</h3>
@@ -245,14 +236,10 @@
 						<p:outputLabel for="rateStatus" value="Rate Status" />
 						<p:inputText id="rateStatus"
 							value="#{data.pickupCreationResponse.rateStatus.description}" />
-
 					</p:panelGrid>
-
 				</c:if>
 			</h:form>
-
 		</ui:define>
 	</ui:composition>
 </h:body>
-
 </html>
