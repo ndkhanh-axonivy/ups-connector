@@ -46,7 +46,6 @@ public class OAuth2Feature implements Feature {
 	}
 
 	private static Response requestToken(AuthContext ctxt) {
-
 		FeatureConfig config = ctxt.config;
 		Form form = new Form("grant_type", "client_credentials");
 		var response = ctxt.target

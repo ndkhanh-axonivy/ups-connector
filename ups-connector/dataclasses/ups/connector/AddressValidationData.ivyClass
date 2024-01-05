@@ -1,13 +1,13 @@
 AddressValidationData #class
 ups.connector #namespace
-requestoption Integer #field
-requestoption PERSISTENT #fieldModifier
+requestOption Integer #field
+requestOption PERSISTENT #fieldModifier
 version String #field
 version PERSISTENT #fieldModifier
-regionalrequestindicator String #field
-regionalrequestindicator PERSISTENT #fieldModifier
-maximumcandidatelistsize Integer #field
-maximumcandidatelistsize PERSISTENT #fieldModifier
+regionalRequestindicator String #field
+regionalRequestindicator PERSISTENT #fieldModifier
+maximumCandidateListSize Integer #field
+maximumCandidateListSize PERSISTENT #fieldModifier
 xavRequest com.ups.wwwcie.api.client.XAVRequest #field
 xavRequest PERSISTENT #fieldModifier
 xavResponseWrapper com.ups.wwwcie.api.client.XAVResponseWrapper #field
