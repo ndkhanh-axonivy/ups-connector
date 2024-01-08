@@ -87,10 +87,10 @@
             { "name" : "xavRequest", "type" : "com.ups.wwwcie.api.client.XAVRequest" }
           ],
           "map" : {
-            "param.requestoption" : "1",
+            "param.requestOption" : "1",
             "param.version" : "\"v1\"",
-            "param.regionalrequestindicator" : "\"false\"",
-            "param.maximumcandidatelistsize" : "1",
+            "param.regionalRequestIndicator" : "\"false\"",
+            "param.maximumCandidateListSize" : "1",
             "param.xavRequest.addressKeyFormat" : "in.xavRequest.addressKeyFormat",
             "param.xavRequest.request.requestOption" : "\"1\""
           }

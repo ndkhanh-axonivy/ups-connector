@@ -21,16 +21,14 @@ import io.swagger.v3.oas.annotations.Hidden;
 @PermitAll
 @Hidden
 public class UPSMock {
-
 	@GET
 	@Path("track/v1/details/{inquiryNumber}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getTracking(@PathParam("inquiryNumber") String inquiryNumber, @PathParam("locale") String locale,
 			@PathParam("returnSignature") String returnSignature) {
-		return Response.status(200).entity(load("CreateTrackingResponse.json"))
-				.build();
+		return Response.status(200).entity(load("CreateTrackingResponse.json")).build();
 	}
-	
+
 	@DELETE
 	@Path("shipments/{version}/pickup/{cancelBy}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -56,7 +54,8 @@ public class UPSMock {
 	@GET
 	@Path("shipments/{version}/pickup/{pickupType}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response pickupPendingStatus(@PathParam("pickupType") String pickupType, @PathParam("version") String version) {
+	public Response pickupPendingStatus(@PathParam("pickupType") String pickupType,
+			@PathParam("version") String version) {
 		return Response.status(200).entity("{\r\n"
 				+ "    \"PickupPendingStatusResponse\": {\r\n"
 				+ "        \"Response\": {\r\n"
@@ -85,11 +84,12 @@ public class UPSMock {
 				+ "}")
 				.build();
 	}
-	
+
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("addressvalidation/{version}/{requestOption}")
-	public Response addressValidation(@PathParam("version") String version, @PathParam("version") String requestOption) {
+	public Response addressValidation(@PathParam("version") String version,
+			@PathParam("requestOption") String requestOption) {
 		return Response.status(200).entity("{\r\n"
 				+ "    \"XAVResponse\": {\r\n"
 				+ "        \"Response\": {\r\n"
@@ -105,13 +105,13 @@ public class UPSMock {
 	}
 	
 	private static String load(String json) {
-	    try (var is = UPSMock.class.getResourceAsStream("json/"+json)) {
-	      if (is == null) {
-	        throw new RuntimeException("The json file '"+json+"' does not exist.");
-	      }
-	      return IOUtils.toString(is, StandardCharsets.UTF_8);
-	    } catch (IOException ex) {
-	      throw new RuntimeException("Failed to read json "+json, ex);
-	    }
-	  }
+		try (var is = UPSMock.class.getResourceAsStream("json/" + json)) {
+			if (is == null) {
+				throw new RuntimeException("The json file '" + json + "' does not exist.");
+			}
+			return IOUtils.toString(is, StandardCharsets.UTF_8);
+		} catch (IOException ex) {
+			throw new RuntimeException("Failed to read json " + json, ex);
+		}
+	}
 }

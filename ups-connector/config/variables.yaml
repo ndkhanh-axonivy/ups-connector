@@ -7,7 +7,6 @@
 #
 Variables:
   ups-connector:
-  
       # Url to UPS connector
       Url: "https://onlinetools.ups.com/api"
   
@@ -16,7 +15,3 @@ Variables:
   
       # Your UPS Application Client Secret
       secretKey: ""
-      
-      
-      
-  

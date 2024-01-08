@@ -13,16 +13,16 @@
         "callSignature" : "addressValidation",
         "input" : {
           "params" : [
-            { "name" : "requestoption", "type" : "Integer" },
+            { "name" : "requestOption", "type" : "Integer" },
             { "name" : "version", "type" : "String" },
-            { "name" : "regionalrequestindicator", "type" : "String" },
-            { "name" : "maximumcandidatelistsize", "type" : "Integer" },
+            { "name" : "regionalRequestIndicator", "type" : "String" },
+            { "name" : "maximumCandidateListSize", "type" : "Integer" },
             { "name" : "xavRequest", "type" : "com.ups.wwwcie.api.client.XAVRequest" }
           ],
           "map" : {
-            "out.maximumcandidatelistsize" : "param.maximumcandidatelistsize",
-            "out.regionalrequestindicator" : "param.regionalrequestindicator",
-            "out.requestoption" : "param.requestoption",
+            "out.maximumCandidateListSize" : "param.maximumCandidateListSize",
+            "out.regionalRequestindicator" : "param.regionalRequestIndicator",
+            "out.requestOption" : "param.requestOption",
             "out.version" : "param.version",
             "out.xavRequest" : "param.xavRequest"
           }
