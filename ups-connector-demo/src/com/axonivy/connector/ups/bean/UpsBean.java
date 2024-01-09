@@ -1,3 +1,5 @@
+package com.axonivy.connector.ups.bean;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,7 +13,6 @@ import com.ups.wwwcie.api.client.XAVRequestAddressKeyFormat;
 @ViewScoped
 @ManagedBean
 public class UpsBean {
-
 	private final DateFormat timeFormatter = new SimpleDateFormat("HH:mm");
 	private final DateFormat dateFormatter = new SimpleDateFormat("dd.MM.yyyy");
 	private final DateFormat inputDateFormatter = new SimpleDateFormat("yyyyMMdd");
@@ -50,5 +51,4 @@ public class UpsBean {
 	public void setPickupPiece(PickupCreationRequestPickupPiece pickupPiece) {
 		this.pickupPiece = pickupPiece;
 	}
-
 }
