@@ -9,9 +9,12 @@ Variables:
   ups-connector:
       # Url to UPS connector
       Url: "https://onlinetools.ups.com/api"
-  
+
+      # Your UPS Auth base URI
+      authUri: "https://onlinetools.ups.com/security/v1/oauth"
+
       # Your UPS Application Client ID
       appId: ""
-  
+
       # Your UPS Application Client Secret
       secretKey: ""
