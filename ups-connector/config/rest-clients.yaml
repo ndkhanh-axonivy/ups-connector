@@ -6,7 +6,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -22,7 +22,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -38,7 +38,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -53,7 +53,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -68,7 +68,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -83,7 +83,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -98,7 +98,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -114,7 +114,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL
@@ -129,7 +129,7 @@ RestClients:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
     - com.ups.auth.OAuth2Feature
     Properties:
-      AUTH.baseUri: https://onlinetools.ups.com/security/v1/oauth
+      AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
       jersey.client.connectorProvider: org.glassfish.jersey.client.HttpUrlConnectorProvider
       JSON.Serialization.PROPERTY_INCLUSION: NON_NULL

@@ -7,7 +7,7 @@
 	xmlns:pe="http://primefaces.org/ui/extensions"
 	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
 <h:body>
-	<ui:composition template="/layouts/basic-10.xhtml">
+	<ui:composition template="/layouts/frame-10.xhtml">
 		<ui:define name="title">PickupCreation</ui:define>
 		<ui:define name="content">
 			<h3>Pickup Creation</h3>
@@ -214,7 +214,7 @@
 				<br />
 				<div class="command-btns">
 					<p:commandLink id="cancel" actionListener="#{logic.close}"
-						value="Cancel" />
+						value="Cancel" immediate="true" />
 					<p:commandButton id="proceed" actionListener="#{logic.callAPI}"
 						value="Proceed" update="form" icon="pi pi-check" />
 				</div>
