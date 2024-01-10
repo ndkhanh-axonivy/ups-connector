@@ -113,6 +113,7 @@
       "config" : {
         "output" : {
           "code" : [
+            "import com.axonivy.connector.ups.bean.UpsBean;",
             "import javax.faces.context.FacesContext;",
             "import java.util.Map;",
             "",
