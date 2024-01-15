@@ -2,7 +2,7 @@
   "format" : "10.0.0",
   "id" : "18BEBB83F9E96872",
   "config" : {
-    "data" : "ups.connector.demo.Data"
+    "data" : "com.axonivy.ups.connector.demo.Data"
   },
   "elements" : [ {
       "id" : "f0",
@@ -28,7 +28,7 @@
       "type" : "DialogCall",
       "name" : "Address form",
       "config" : {
-        "dialogId" : "ups.connector.demo.Address",
+        "dialogId" : "com.axonivy.ups.connector.demo.Address",
         "startMethod" : "start()"
       },
       "visual" : {

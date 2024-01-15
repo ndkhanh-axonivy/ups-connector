@@ -2,7 +2,7 @@
   "format" : "10.0.0",
   "id" : "18BEFEC3A70B2B09",
   "config" : {
-    "data" : "ups.connector.demo.Data"
+    "data" : "com.axonivy.ups.connector.demo.Data"
   },
   "elements" : [ {
       "id" : "f0",
@@ -29,7 +29,7 @@
       "type" : "DialogCall",
       "name" : "PickupCreation",
       "config" : {
-        "dialogId" : "ups.connector.demo.PickupCreation",
+        "dialogId" : "com.axonivy.ups.connector.demo.PickupCreation",
         "startMethod" : "start()"
       },
       "visual" : {
@@ -55,7 +55,7 @@
       "type" : "DialogCall",
       "name" : "PickupCancel",
       "config" : {
-        "dialogId" : "ups.connector.demo.PickupCancel",
+        "dialogId" : "com.axonivy.ups.connector.demo.PickupCancel",
         "startMethod" : "start()"
       },
       "visual" : {

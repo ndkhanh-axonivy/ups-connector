@@ -3,7 +3,7 @@
   "id" : "18BA81B8D6761598",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.PickupData"
+    "data" : "com.axonivy.ups.connector.PickupData"
   },
   "elements" : [ {
       "id" : "f0",

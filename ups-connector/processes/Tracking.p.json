@@ -3,7 +3,7 @@
   "id" : "18B6AEC03011C993",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.TrackingData"
+    "data" : "com.axonivy.ups.connector.TrackingData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -13,7 +13,7 @@
         "callSignature" : "tracking",
         "input" : {
           "params" : [
-            { "name" : "trackingRequest", "type" : "ups.connector.TrackingRequestData" }
+            { "name" : "trackingRequest", "type" : "com.axonivy.ups.connector.TrackingRequestData" }
           ],
           "map" : {
             "out.trackingRequest" : "param.trackingRequest"

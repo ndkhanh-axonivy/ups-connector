@@ -3,7 +3,7 @@
   "id" : "18BA7F3EF0ADEECC",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.TimeInTransitData"
+    "data" : "com.axonivy.ups.connector.TimeInTransitData"
   },
   "elements" : [ {
       "id" : "f0",

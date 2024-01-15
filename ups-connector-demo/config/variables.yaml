@@ -11,6 +11,9 @@ Variables:
   
       # Url to UPS connector
       Url: "https://wwwcie.ups.com/api"
+      
+      # Your UPS Auth base URI
+      authUri: "https://wwwcie.ups.com/security/v1/oauth"
   
       # Your UPS Application (client) ID
       appId: "ZItPy7z8Ep1bZBpGLVQbW3CPiMk9rGFJDpRLjgocLCJbQ5Tw"

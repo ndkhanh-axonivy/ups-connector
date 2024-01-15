@@ -3,7 +3,7 @@
   "id" : "18BA8C00018E3138",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.ShipingData"
+    "data" : "com.axonivy.ups.connector.ShipingData"
   },
   "elements" : [ {
       "id" : "f0",

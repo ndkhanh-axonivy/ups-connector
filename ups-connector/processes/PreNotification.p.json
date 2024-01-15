@@ -3,7 +3,7 @@
   "id" : "18BA8EFA66A3E32A",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.PreNotificationData"
+    "data" : "com.axonivy.ups.connector.PreNotificationData"
   },
   "elements" : [ {
       "id" : "f0",

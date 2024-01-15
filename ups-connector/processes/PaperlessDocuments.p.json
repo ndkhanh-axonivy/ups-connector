@@ -3,7 +3,7 @@
   "id" : "18BA7FF3B06A0E62",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.PaperlessDocumentsData"
+    "data" : "com.axonivy.ups.connector.PaperlessDocumentsData"
   },
   "elements" : [ {
       "id" : "f0",
