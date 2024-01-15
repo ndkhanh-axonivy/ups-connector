@@ -4,7 +4,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -20,7 +20,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -36,7 +36,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -51,7 +51,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -66,7 +66,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -81,7 +81,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -96,7 +96,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -112,7 +112,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
@@ -127,7 +127,7 @@ RestClients:
     Url: ${ivy.var.ups-connector.Url}
     Features:
     - ch.ivyteam.ivy.rest.client.mapper.JsonFeature
-    - com.ups.auth.OAuth2Feature
+    - com.axonivy.ups.connector.oauth.OAuth2Feature
     Properties:
       AUTH.baseUri: ${ivy.var.ups-connector.authUri}
       AUTH.appId: ${ivy.var.ups-connector.appId}
