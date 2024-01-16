@@ -3,7 +3,7 @@
   "id" : "18BA92FE8801A9AF",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.QuatumViewData"
+    "data" : "com.axonivy.ups.connector.QuatumViewData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -28,7 +28,8 @@
           "map" : {
             "result.quantumViewResponse" : "in.quantumViewResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 64 }

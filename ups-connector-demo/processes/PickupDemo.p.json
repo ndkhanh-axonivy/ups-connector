@@ -2,7 +2,7 @@
   "format" : "10.0.0",
   "id" : "18BEFEC3A70B2B09",
   "config" : {
-    "data" : "ups.connector.demo.Data"
+    "data" : "com.axonivy.ups.connector.demo.Data"
   },
   "elements" : [ {
       "id" : "f0",
@@ -11,7 +11,8 @@
       "config" : {
         "callSignature" : "pickupCreation",
         "outLink" : "pickupCreation.ivp",
-        "startName" : "Pickup Creation"
+        "startName" : "Pickup Creation",
+        "tags" : "demo"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
@@ -29,7 +30,7 @@
       "type" : "DialogCall",
       "name" : "PickupCreation",
       "config" : {
-        "dialogId" : "ups.connector.demo.PickupCreation",
+        "dialogId" : "com.axonivy.ups.connector.demo.PickupCreation",
         "startMethod" : "start()"
       },
       "visual" : {
@@ -43,7 +44,8 @@
       "config" : {
         "callSignature" : "pickupCancel",
         "outLink" : "pickupCancel.ivp",
-        "startName" : "Pickup Cancel"
+        "startName" : "Pickup Cancel",
+        "tags" : "demo"
       },
       "visual" : {
         "at" : { "x" : 88, "y" : 248 },
@@ -55,7 +57,7 @@
       "type" : "DialogCall",
       "name" : "PickupCancel",
       "config" : {
-        "dialogId" : "ups.connector.demo.PickupCancel",
+        "dialogId" : "com.axonivy.ups.connector.demo.PickupCancel",
         "startMethod" : "start()"
       },
       "visual" : {

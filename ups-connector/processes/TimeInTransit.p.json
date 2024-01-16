@@ -3,7 +3,7 @@
   "id" : "18BA7F3EF0ADEECC",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.TimeInTransitData"
+    "data" : "com.axonivy.ups.connector.TimeInTransitData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -32,7 +32,8 @@
           "map" : {
             "result.timeInTransitResponse" : "in.timeInTransitResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 208, "y" : 64 }

@@ -3,7 +3,7 @@
   "id" : "18B9434D3583828B",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.LocatorData"
+    "data" : "com.axonivy.ups.connector.LocatorData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -36,7 +36,8 @@
           "map" : {
             "result.locatorResponseWrapper" : "in.locatorResponseWrapper"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 200, "y" : 64 }

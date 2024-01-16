@@ -3,7 +3,7 @@
   "id" : "18BA8C00018E3138",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.ShipingData"
+    "data" : "com.axonivy.ups.connector.ShipingData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -34,7 +34,8 @@
           "map" : {
             "result.shipmentResponse" : "in.shipmentResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 248, "y" : 64 },
@@ -104,7 +105,8 @@
           "map" : {
             "result.voidShipmentResponse" : "in.voidShipmentResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 248, "y" : 224 }
@@ -174,7 +176,8 @@
           "map" : {
             "result.labelRecoveryResponse" : "in.labelRecoveryResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 400 }

@@ -3,7 +3,7 @@
   "id" : "18B94088D7BAEC17",
   "kind" : "CALLABLE_SUB",
   "config" : {
-    "data" : "ups.connector.AddressValidationData"
+    "data" : "com.axonivy.ups.connector.AddressValidationData"
   },
   "elements" : [ {
       "id" : "f0",
@@ -34,7 +34,8 @@
           "map" : {
             "result.xavResponseWrapper" : "in.xavResponseWrapper"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
