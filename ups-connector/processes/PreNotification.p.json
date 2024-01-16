@@ -32,7 +32,8 @@
           "map" : {
             "result.preNotificationResponse" : "in.preNotificationResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 232, "y" : 64 }

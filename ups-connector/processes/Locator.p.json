@@ -36,7 +36,8 @@
           "map" : {
             "result.locatorResponseWrapper" : "in.locatorResponseWrapper"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 200, "y" : 64 }

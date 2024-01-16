@@ -34,7 +34,8 @@
           "map" : {
             "result.pickupRateResponse" : "in.pickupRateResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 64 }
@@ -108,7 +109,8 @@
           "map" : {
             "result.pickupPendingStatusResponse" : "in.pickupPendingStatusResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 208 }
@@ -177,7 +179,8 @@
           "map" : {
             "result.pickupCancelResponse" : "in.pickupCancelResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 368 }
@@ -247,7 +250,8 @@
           "map" : {
             "result.pickupCreationResponse" : "in.pickupCreationResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 512 }
@@ -318,7 +322,8 @@
           "map" : {
             "result.pickupGetServiceCenterFacilitiesResponse" : "in.pickupGetServiceCenterFacilitiesResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 656 }

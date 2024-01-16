@@ -28,7 +28,8 @@
           "map" : {
             "result.quantumViewResponse" : "in.quantumViewResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 256, "y" : 64 }

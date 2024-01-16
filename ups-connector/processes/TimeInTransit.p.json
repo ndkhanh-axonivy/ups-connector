@@ -32,7 +32,8 @@
           "map" : {
             "result.timeInTransitResponse" : "in.timeInTransitResponse"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 208, "y" : 64 }
