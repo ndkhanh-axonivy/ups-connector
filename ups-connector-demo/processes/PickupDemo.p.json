@@ -11,7 +11,8 @@
       "config" : {
         "callSignature" : "pickupCreation",
         "outLink" : "pickupCreation.ivp",
-        "startName" : "Pickup Creation"
+        "startName" : "Pickup Creation",
+        "tags" : "demo"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
@@ -43,7 +44,8 @@
       "config" : {
         "callSignature" : "pickupCancel",
         "outLink" : "pickupCancel.ivp",
-        "startName" : "Pickup Cancel"
+        "startName" : "Pickup Cancel",
+        "tags" : "demo"
       },
       "visual" : {
         "at" : { "x" : 88, "y" : 248 },

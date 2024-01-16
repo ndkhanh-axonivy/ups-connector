@@ -11,7 +11,8 @@
       "config" : {
         "callSignature" : "getTrackingInfo",
         "outLink" : "getTrackingInfo.ivp",
-        "startName" : "Get Tracking"
+        "startName" : "Get Tracking",
+        "tags" : "demo"
       },
       "visual" : {
         "at" : { "x" : 88, "y" : 200 }
